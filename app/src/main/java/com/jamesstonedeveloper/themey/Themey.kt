@@ -193,7 +193,9 @@ class Themey {
                 return
             }
             AppCompatDelegate.setDefaultNightMode(theme)
-            changeTheme(defaultTheme, circleAnimation, centerX, centerY)
+            if (defaultTheme != -1) {
+                changeTheme(defaultTheme, circleAnimation, centerX, centerY)
+            }
         } else {
             (context as? Activity)?.recreate()
         }
