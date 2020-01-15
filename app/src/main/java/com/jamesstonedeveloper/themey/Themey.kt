@@ -29,7 +29,7 @@ class Themey {
     private var shouldKeepTheme: Boolean = false
     private var centerX = 0
     private var centerY = 0
-    private var circleAnimation: CircleAnimation = CircleAnimation.INWARD
+    private var circleAnimation: CircleAnimation = CircleAnimation.NONE
     private var showSnapshot = false
     private val PREFS_NAME = "THEME_CHANGE_PREFS"
     private val THEME_KEY = "THEME"
@@ -277,7 +277,7 @@ class Themey {
         centerY = 0
         centerX = 0
         showSnapshot = false
-        circleAnimation = CircleAnimation.INWARD
+        circleAnimation = CircleAnimation.NONE
     }
 
     private fun getCircleRadius(): Float {
