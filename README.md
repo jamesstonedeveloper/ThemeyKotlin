@@ -1,6 +1,6 @@
 # ThemeyKotlin
 
-A simple library to easily switch between themes or nay/night modes in your app. Circle reveal animations included for that extra bit of style
+A simple library to easily switch between themes or nay/night modes in your app. Circle reveal animations included for that extra bit of style. [Click here for the Java version](https://github.com/jamesstonedeveloper/ThemeyJava "ThemeyJava")
 
 ## Gradle
 
