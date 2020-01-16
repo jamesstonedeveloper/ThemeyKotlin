@@ -131,6 +131,7 @@ class Themey {
     fun toggleDayNight(circleAnimation: CircleAnimation, centerX: Int, centerY: Int) {
         changeTheme(
                 if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.MODE_NIGHT_NO else AppCompatDelegate.MODE_NIGHT_YES,
+                circleAnimation,
                 centerX,
                 centerY
         )
