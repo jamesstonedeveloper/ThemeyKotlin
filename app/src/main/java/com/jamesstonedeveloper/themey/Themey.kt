@@ -117,18 +117,7 @@ class Themey {
         }
     }
 
-    fun toggleDayNight() {
-        changeTheme(if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.MODE_NIGHT_NO else AppCompatDelegate.MODE_NIGHT_YES)
-    }
-
-    fun toggleDayNight(circleAnimation: CircleAnimation) {
-        changeTheme(
-                if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.MODE_NIGHT_NO else AppCompatDelegate.MODE_NIGHT_YES,
-                circleAnimation
-        )
-    }
-
-    fun toggleDayNight(circleAnimation: CircleAnimation, centerX: Int, centerY: Int) {
+    fun toggleDayNight(circleAnimation: CircleAnimation = this.circleAnimation, centerX: Int = this.centerX, centerY: Int = this.centerY) {
         changeTheme(
                 if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.MODE_NIGHT_NO else AppCompatDelegate.MODE_NIGHT_YES,
                 circleAnimation,
@@ -137,33 +126,7 @@ class Themey {
         )
     }
 
-    fun toggleDayNight(centerX: Int, centerY: Int) {
-        changeTheme(
-                if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.MODE_NIGHT_NO else AppCompatDelegate.MODE_NIGHT_YES,
-                centerX,
-                centerY
-        )
-    }
-
-    fun changeTheme(theme: Int) {
-        if (!isAnimating) {
-            changeTheme(theme, circleAnimation)
-        }
-    }
-
-    fun changeTheme(theme: Int, circleAnimation: CircleAnimation) {
-        if (!isAnimating) {
-            changeTheme(theme, circleAnimation, 0, 0)
-        }
-    }
-
-    fun changeTheme(theme: Int, centerX: Int, centerY: Int) {
-        if (!isAnimating) {
-            changeTheme(theme, circleAnimation, centerX, centerY)
-        }
-    }
-
-    fun changeTheme(theme: Int, circleAnimation: CircleAnimation, centerX: Int, centerY: Int) {
+    fun changeTheme(theme: Int, circleAnimation: CircleAnimation = this.circleAnimation, centerX: Int = this.centerX, centerY: Int = this.centerY) {
         if (!isAnimating) {
             if (isDayNightTheme(theme)) {
                 if (isCurrentDayNightTheme(theme) && isCurrentCustomTheme(defaultTheme)) {
