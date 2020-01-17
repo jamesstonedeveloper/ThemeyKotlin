@@ -2,6 +2,8 @@
 
 A simple library to easily switch between themes or day/night modes in your app. Circle reveal animations included for that extra bit of style. [Click here for the Java version](https://github.com/jamesstonedeveloper/ThemeyJava "ThemeyJava")
 
+<img src="https://github.com/jamesstonedeveloper/ThemeyJavaDemo/blob/master/themeydemo.gif" height="400" />
+
 ## Gradle
 
 [![](https://jitpack.io/v/jamesstonedeveloper/ThemeyKotlin.svg)](https://jitpack.io/#jamesstonedeveloper/ThemeyKotlin)
