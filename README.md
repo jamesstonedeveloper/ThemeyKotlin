@@ -110,5 +110,5 @@ Themey.instance.changeTheme(R.style.GreenTheme, INWARD, x / 2, y / 2)
 
 ## Limitations
 
-* An image is placed over the activity to allow for the circle animation. This image has an elevation of 10 by default, but if your view has anything with an elevation higher than 10 you'll need to use the setElevation() method provided to increase the images' elevation
+* An image is placed over the activity to allow for the circle animation. This image has an elevation of 10 by default, but if your view has anything with an elevation higher than 10 you'll need to do `Themey.instance.elevation = yourElevation` to increase the image's elevation
 * Does not work well with android ActionBars/Toolbars
