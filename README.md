@@ -4,7 +4,7 @@ A simple library to easily switch between themes or day/night modes in your app.
 
 <img src="https://github.com/jamesstonedeveloper/ThemeyJavaDemo/blob/master/themeydemo.gif" height="400" />
 
-[Click here for the demo app](https://github.com/jamesstonedeveloper/ThemeyKotlinDemo "ThemeyKotlinDemo")
+[Click here for the demo app](https://github.com/jamesstonedeveloper/ThemeyKotlinDemo "Themey kotlin demo")
 
 ## Gradle
 
