@@ -2,6 +2,10 @@
 
 A simple library to easily switch between themes or day/night modes in your app. Circle reveal animations included for that extra bit of style. [Click here for the Java version](https://github.com/jamesstonedeveloper/ThemeyJava "ThemeyJava")
 
+<img src="https://github.com/jamesstonedeveloper/ThemeyJavaDemo/blob/master/themeydemo.gif" height="600" />
+
+[Click here for the demo app](https://github.com/jamesstonedeveloper/ThemeyKotlinDemo "Themey kotlin demo")
+
 ## Gradle
 
 [![](https://jitpack.io/v/jamesstonedeveloper/ThemeyKotlin.svg)](https://jitpack.io/#jamesstonedeveloper/ThemeyKotlin)
@@ -40,7 +44,7 @@ In your activity's onCreate method, after setting the content view, initialise t
 override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Themey.instance.init(this, findViewById(R.id.mainLayout, true) //initialise Themey
+        Themey.instance.init(this, findViewById(R.id.mainLayout, true)) //initialise Themey
     }
 ```
 
@@ -106,5 +110,5 @@ Themey.instance.changeTheme(R.style.GreenTheme, INWARD, x / 2, y / 2)
 
 ## Limitations
 
-* An image is placed over the activity to allow for the circle animation. This image has an elevation of 10 by default, but if your view has anything with an elevation higher than 10 you'll need to use the setElevation() method provided to increase the images' elevation
+* An image is placed over the activity to allow for the circle animation. This image has an elevation of 10 by default, but if your view has anything with an elevation higher than 10 you'll need to do `Themey.instance.elevation = yourElevation` to increase the image's elevation
 * Does not work well with android ActionBars/Toolbars
