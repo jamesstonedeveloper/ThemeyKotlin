@@ -44,7 +44,7 @@ In your activity's onCreate method, after setting the content view, initialise t
 override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Themey.instance.init(this, findViewById(R.id.mainLayout, true) //initialise Themey
+        Themey.instance.init(this, findViewById(R.id.mainLayout, true)) //initialise Themey
     }
 ```
 
